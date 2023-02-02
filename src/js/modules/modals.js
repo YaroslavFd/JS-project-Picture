@@ -68,6 +68,7 @@ const modals = () => {
         document.body.style.overflow = "hidden";
         let scroll = calcScroll();
         document.body.style.marginRight = `${scroll}px`;
+        btnPressed = true;
 
       }
     }, time);
@@ -104,7 +105,7 @@ const modals = () => {
   bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
   bindModal('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
   openByScroll('.fixed-gift');
-  showModalByTime('.popup-consultation', 60000);
+  showModalByTime('.popup-consultation', 2000);
 };
 
 export default modals;
